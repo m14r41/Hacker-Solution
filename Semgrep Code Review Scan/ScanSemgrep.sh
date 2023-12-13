@@ -63,22 +63,26 @@ case $option in
 
         echo -e "${RED}Running Semgrep with normal mode with Output in Text...${NC}"
         display_blinking_box "Running Semgrep with normal mode with Output in Text.."
+        
         semgrep scan --config=auto --output SemgrepOutput.txt --force-color --text
         wait
 
-        echo -e "${RED}Running Semgrep with Pro rules Output in Text ...\n${NC}"
+        echo -e "\n${RED}Running Semgrep with Pro rules Output in Text ...${NC}"
         display_blinking_box "Running Semgrep with Pro rules Output in Text ..."
-        semgrep scan --config=auto --output SemgrepOutputPro.txt --force-color --text --pro
+        
+        semgrep scan --config=auto --pro --output SemgrepOutputPro.txt --text
         wait
 
-        echo -e "${RED}Running Semgrep with normal Output in Json...\n${NC}"
+        echo -e "\n${RED}Running Semgrep with normal Output in Json...${NC}"
         display_blinking_box "Running Semgrep with normal Output in Json..."
-        semgrep scan --config=auto --output SemgrepOutput.json --force-color --json
+        
+        semgrep scan --config=auto --output SemgrepOutput.json  --json
         wait
 
-        echo -e "${RED}Running Semgrep with Pro rules Output in Json...\n${NC}"
+        echo -e "\n${RED}Running Semgrep with Pro rules Output in Json...${NC}"
         display_blinking_box "Running Semgrep with Pro rules Output in Json.."
-        semgrep scan --config=auto --output SemgrepOutputPro.json --force-color --json --pro
+        
+        semgrep scan --config=auto --pro --output SemgrepOutputPro.json --json
         wait
 
         ;;
