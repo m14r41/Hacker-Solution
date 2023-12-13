@@ -8,7 +8,9 @@ The Bash script utilizes ANSI color codes to create a visually appealing menu-dr
 ## Install
 
 ```bash
-[git clone ](https://github.com/m14r41/Hacker-Solution/blob/main/Semgrep%20Code%20Review%20Scan/ScanSemgrep.sh)https://github.com/m14r41/Hacker-Solution/blob/main/Semgrep%20Code%20Review%20Scan/ScanSemgrep.sh
+
+
+wget https://github.com/m14r41/Hacker-Solution/blob/main/Semgrep%20Code%20Review%20Scan/ScanSemgrep.sh
 
 chmod +x ScanSemgrep.sh
 mv ScanSemgrep.sh ScanSemgrep
