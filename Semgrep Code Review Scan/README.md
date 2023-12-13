@@ -14,6 +14,5 @@ wget https://github.com/m14r41/Hacker-Solution/blob/main/Semgrep%20Code%20Review
 
 chmod +x ScanSemgrep.sh
 mv ScanSemgrep.sh ScanSemgrep
-sudo mv ScanSemgrep /user/local/bin
-
+sudo mv ScanSemgrep /usr/local/bin/
 ```
