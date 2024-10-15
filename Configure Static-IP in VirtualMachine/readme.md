@@ -1,20 +1,16 @@
 
 
 - Step 1: Open Your Terminal.
+  
 - Step 2: ```ip addr show```
+  
+  ![image](https://github.com/user-attachments/assets/4923e0f3-eaa2-4c8d-9f27-6f54edbf438a)
+  
+Step 3: modify accordingly to `sudo nano /etc/network/interfaces`.
 
+Step 4: Example per case shown in the screenshot
  ```bash
-
-2: ens33: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
-    link/ether 00:0c:29:3e:8d:10 brd ff:ff:ff:ff:ff:ff
-    inet 192.168.1.100/24 brd 192.168.1.255 scope global dynamic ens33
-       valid_lft 86025sec preferred_lft 86025sec
-    inet6 fe80::20c:29ff:fe3e:8d10/64 scope link
-       valid_lft forever preferred_lft forever
-
-    ```
-
-```bash # This file describes the network interfaces available on your system
+# This file describes the network interfaces available on your system
 # and how to activate them. For more information, see interfaces(5).
 
 source /etc/network/interfaces.d/*
