@@ -24,7 +24,7 @@ def process_input_file(file_path):
                 total_entries += 1
                 
                 # Extract the build number and minute values
-                build_match = re.match(r'#(\d+)', line)  # Extract the build number (#49, #48, etc.)
+                build_match = re.match(r'#(\d+)', line)  # Extract the build number (#4, #54, etc.)
                 if build_match:
                     build_number = int(build_match.group(1))
                     
